@@ -1,162 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="icon" type="image/png" href="joyicon.png">
-
-    <div class="joy1">
-    <a href="https://discord.com/invite/g3s3ajUZCu"><img src="joy1.png" height="250" title="joy discord"></a>
-    <a href="phpjoy.php"></a>
-    </div>
-    
-    <link rel="stylesheet" type="text/css" href="style.css" >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joy Games</title>
-
+    <link rel="icon" type="image/png" href="joyicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<link rel="stylesheet" type="text/css" href="style.css" >
-	
-	<title>Joy Games</title>
-	
-</head>
-<div class="video-container">
-	<div class="area" >
-		<ul class="circles">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-		</ul>
-</div >
-<head>
-
-
-
-
-
-
-	
-
-
-	
-	
-<!-- nice try -->
-
-
-
-
-
-
-
-
-
-
-
-
-</video>
- </div>
 
 <body>
+    <div class="joy1">
+        <a href="https://discord.com/invite/g3s3ajUZCu"><img src="joy1.png" height="250" title="joy discord"></a>
+        <a href="phpjoy.php"></a>
+    </div>
+
+    <div class="video-container">
+        <div class="area" >
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="container">
         <header>
-            <h1> !  للالعاب Joy أهلا بموقع</h1>
+            <h1>أهلا بموقع Joy للألعاب!</h1>
         </header>
         <main>
+            <form onsubmit="event.preventDefault(); joy();">
                 <input type="text" id="id" name="id" placeholder="Enter code...">
-                    <button type="submit" onclick="joy()">Search</button>                    
+                <button type="submit">Search</button>
+            </form>                    
         </main>
     </div>
 
-</body>
-<script>
-    function joy(){
-        const api="https://script.google.com/macros/s/AKfycbzYbtrWljiuC-cK_n1A98e-EWBjQfEc-VRaFxxX8ac-8emRwSs1Q84hOV4T9GCSROPRaw/exec";
-        fetch(api)
-        .then(response => response.json())
-        .then(res => getUrl(res.data));
-        
-        let code = document.getElementById('id');
-        getUrl = e => {
-            let found = false;
-            e.forEach(e => {
-                if(e.id == code.value){
-                    location.href = e.url;
-                    found = true;
-                }
-            });
+    <footer>
+        <p>!شكرا على الزيارة واستمتع بالألعاب</p>
+    </footer>
+
+    <script>
+        function joy() {
+            const api = "https://script.google.com/macros/s/AKfycbzYbtrWljiuC-cK_n1A98e-EWBjQfEc-VRaFxxX8ac-8emRwSs1Q84hOV4T9GCSROPRaw/exec";
+            fetch(api)
+            .then(response => response.json())
+            .then(res => getUrl(res.data));
             
-            if (!found) {
-                location.href = "https://youtu.be/dQw4w9WgXcQ";
+            let code = document.getElementById('id');
+            getUrl = e => {
+                let found = false;
+                e.forEach(e => {
+                    if (e.id == code.value) {
+                        location.href = e.url;
+                        found = true;
+                    }
+                });
+                
+                if (!found) {
+                    location.href = "https://youtu.be/dQw4w9WgXcQ";
+                }
             }
         }
-    }
+    </script>
 
-    
-</script>
-<!DOCTYPE html>
-<html>
-<head> 
-	<script>
-		
-		function incrementCounter() {
-			if(typeof(Storage) !== "undefined") {
-				if (localStorage.pageviewcount) {
-					localStorage.pageviewcount = Number(localStorage.pageviewcount)+1;
-				} else {
-					localStorage.pageviewcount = 1;
-				}
-				document.getElementById("counter").innerHTML = localStorage.pageviewcount;
-			}
-		}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
 
-		
-		window.onload = function() {
-			incrementCounter();
-		};
-	</script>
-</head>
-<body>
+    <a href="https://discord.com/invite/g3s3ajUZCu" target="_blank">
+        <button id="discord-button">Joy سيرفر</button>
+    </a>
+</body>
+</html>
+
+
 	<header>
 		<h1>Joy جميع اكواد الالعاب بتحصلها بسيرفر   </h1>
 		<h1>اكتب في روم الشات  : <span class="black">اكواد؟</span>  </h1>
-		<h1>!وبتحصل جميع اكواد الالعاب</h1>
-	</header>
-	
 		
-
-	<footer>
-		<p>!شكرا على الزيارة واستمتع بالالعاب</p>
-	</footer>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-crossorigin="anonymous">
-</script> 
-</html>
-
-</html>
-</head>
-<body>
-	<a href="https://discord.com/invite/g3s3ajUZCu" target="_blank">
-		<button id="discord-button">  Joy سيرفر </button>
-	</a>
-</body>
-</html>
-
