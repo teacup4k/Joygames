@@ -300,8 +300,9 @@ p {
 
   #discord-button {
 	position: fixed;
-	bottom: 20px;
-	left: 700px;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
 	padding: 30px 190px;
 	background-color: #3e5abe;
 	color: #ffffff;
@@ -314,29 +315,6 @@ p {
 	justify-content: center;
 	align-items: center;
 }
-
-#discord-button:hover {
-	background-color: #6b7eb8;
-}
-
-#discord-button::after {
-	content: " ما عندك اكواد العاب؟ حياك السيرفر الدسكورد فيه جميع اكواد الالعاب";
-	position: absolute;
-	bottom: 110%;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 250px;
-	padding: 10px;
-	background-color: #fff;
-	color: #000;
-	border-radius: 5px;
-	font-size: 14px;
-	text-align: center;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-	z-index: 1;
-}
-
-#discord-button:hover::after {
-	opacity: 1;
+.black {
+	color: rgb(82, 14, 146);
 }
