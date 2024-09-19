@@ -28,61 +28,34 @@
                 <li></li>
                 <li></li>
                 <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
         </div>
     </div>
 
-
     <div class="container">
         <header>
-            <h1>أهلا بموقع Joy للألعاب!</h1>
+            <h1>!على الالعاب <span class="black">JOY</span> شكرا </h1>
         </header>
-        <main>
-            <form onsubmit="event.preventDefault(); joy();">
-                <input type="text" id="id" name="id" placeholder="Enter code...">
-                <button type="submit">Search</button>
-            </form>                    
-        </main>
+       
     </div>
+    <br> <br> <br>
+   
 
-    <footer>
-        <p>!شكرا على الزيارة واستمتع بالألعاب</p>
-    </footer>
-
-    <script>
-        function joy() {
-            const api = "https://script.google.com/macros/s/AKfycbzYbtrWljiuC-cK_n1A98e-EWBjQfEc-VRaFxxX8ac-8emRwSs1Q84hOV4T9GCSROPRaw/exec";
-            fetch(api)
-            .then(response => response.json())
-            .then(res => getUrl(res.data));
-            
-            let code = document.getElementById('id');
-            getUrl = e => {
-                let found = false;
-                e.forEach(e => {
-                    if (e.id == code.value) {
-                        location.href = e.url;
-                        found = true;
-                    }
-                });
-                
-                if (!found) {
-                    location.href = "https://youtu.be/dQw4w9WgXcQ";
-                }
-            }
-        }
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
-
-    <a href="https://discord.com/invite/g3s3ajUZCu" target="_blank">
-        <button id="discord-button">Joy سيرفر</button>
-    </a>
+    
+   
 </body>
 </html>
 
 
 	<header>
-		<h1>Joy جميع اكواد الالعاب بتحصلها بسيرفر   </h1>
-		<h1>اكتب في روم الشات  : <span class="black">اكواد؟</span>  </h1>
-		
+		<h1> .على اللحظات الممتعة التي عشناها سويًا <span class="black">JOY</span> شكرًا لسيرفر 
+            
+            
+        </h1>
+        <h1>.قد تكون رحلة توزيع ألعاب المحاكي قد انتهت ولكن هذه ليست نهاية السيرفر العظيم</h1>
+                <h1>.شكرًا لكم على الفرصة التي قدمتموها لنا للاستمتاع وتقديم الألعاب لأعضاء السيرفر  </h1>
+
+	
